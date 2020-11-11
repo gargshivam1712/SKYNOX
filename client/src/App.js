@@ -39,7 +39,7 @@ export default class App extends Component {
 
     draw = (e)=>{
         if(!this.painting) return ;
-        this.state.ctx.lineWidth = 5;
+        this.state.ctx.lineWidth = 2;
         this.state.ctx.lineCap = 'round';
         this.state.ctx.lineTo(e.clientX-this.start_canvas_x,e.clientY-this.start_canvas_y);
         this.state.ctx.stroke();
